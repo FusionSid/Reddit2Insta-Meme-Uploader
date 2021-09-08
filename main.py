@@ -1,8 +1,13 @@
 import os
+from instabot import bot
 import random
 import praw
 import requests
 import dotenv
+import glob
+
+cookie_del = glob.glob("config/*cookie.json")
+os.remove(cookie_del[0])
 
 dotenv.load_dotenv()
 
@@ -30,3 +35,11 @@ response = requests.get(image)
 with open('image.png', 'wb') as f:
     f.write(response.content)
     f.close()
+
+bot = bot.Bot()
+
+bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
+image = 'image.png'
+
+bot.upload_photo(image, caption='Test, pls work')
+print("Done")
