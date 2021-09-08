@@ -40,7 +40,7 @@ bot = bot.Bot()
 bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
 # Choose a random image and save it
-amount = 5
+amount = 20
 for i in range(amount):
     image = random.choice(urls)
     response = requests.get(image)
