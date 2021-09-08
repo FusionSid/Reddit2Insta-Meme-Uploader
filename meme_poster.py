@@ -34,7 +34,7 @@ def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
 
 # Get the urls
 client = reddit_client()
-urls = get_img_url(client=client, sub_name='memes', limit=25)
+urls = get_img_url(client=client, sub_name='dankmemes', limit=25)
 
 # Make insta bot
 bot = bot.Bot()
@@ -70,7 +70,7 @@ for item in urls:
 
 try:
     # Delete them damm cookies that keep comming
-    os.remove(glob.glob("config"))
-    os.remove(glob.glob("image*"))
+    cookie_del = glob.glob("config/*cookie.json")
+    os.remove(cookie_del[0])
 except:
     print("Error")
