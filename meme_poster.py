@@ -42,8 +42,16 @@ bot = bot.Bot()
 # Login
 bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
-# Choose a random image and save it
-amount = 25
+#amount = 25
+#for i in range(amount):
+#    image = random.choice(urls)
+#    response = requests.get(image)
+#    with open('image.png', 'wb') as f:
+#        f.write(response.content)
+#        f.close()
+
+# Choose an image and save it
+
 for item in urls:
     response = requests.get(item)
     with open('image.png', 'wb') as f:
@@ -62,7 +70,7 @@ for item in urls:
 
 try:
     # Delete them damm cookies that keep comming
-    cookie_del = glob.glob("config/*cookie.json")
-    os.remove(cookie_del[0])
+    os.remove(glob.glob("config"))
+    os.remove(glob.glob("image*"))
 except:
     print("Error")
