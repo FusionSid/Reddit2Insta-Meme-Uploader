@@ -6,9 +6,12 @@ import requests
 import dotenv
 import glob
 
-# Delete them damm cookies that keep comming
-cookie_del = glob.glob("config/*cookie.json")
-os.remove(cookie_del[0])
+try:
+    # Delete them damm cookies that keep comming
+    cookie_del = glob.glob("config/*cookie.json")
+    os.remove(cookie_del[0])
+except:
+    print("Error")
 
 dotenv.load_dotenv()
 
@@ -31,7 +34,7 @@ def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
 
 # Get the urls
 client = reddit_client()
-urls = get_img_url(client=client, sub_name='memes', limit=50)
+urls = get_img_url(client=client, sub_name='memes', limit=25)
 
 # Make insta bot
 bot = bot.Bot()
@@ -40,10 +43,9 @@ bot = bot.Bot()
 bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
 # Choose a random image and save it
-amount = 20
-for i in range(amount):
-    image = random.choice(urls)
-    response = requests.get(image)
+amount = 25
+for item in urls:
+    response = requests.get(item)
     with open('image.png', 'wb') as f:
         f.write(response.content)
         f.close()
@@ -51,5 +53,16 @@ for i in range(amount):
     image = 'image.png'
 
     # Upload photo
-    bot.upload_photo(image, caption='Meme lmao')
-    print("Done")
+    try:
+        bot.upload_photo(image, caption='')
+        print("Done")
+    except:
+        print("Upload Failed")
+
+
+try:
+    # Delete them damm cookies that keep comming
+    cookie_del = glob.glob("config/*cookie.json")
+    os.remove(cookie_del[0])
+except:
+    print("Error")
