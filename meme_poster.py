@@ -6,12 +6,25 @@ import requests
 import dotenv
 import glob
 
-try:
-    # Delete them damm cookies that keep comming
-    cookie_del = glob.glob("config/*cookie.json")
-    os.remove(cookie_del[0])
-except:
-    print("Error")
+def deletecookies():
+    try:
+        # Delete them damm cookies and other shit that keep comming
+        cookie_del = glob.glob("config/*cookie.json")
+        os.remove(cookie_del[0])
+    except:
+        print("Error")
+
+def delete_image(image):
+    if image.endswith('.jpg'):
+        os.remove(image)
+    elif image.endswith('.png'):
+        os.remove(image)
+    elif image.endswith('.REMOVE_ME'):
+        os.remove(image)
+    else:
+        print("Can't find image")
+
+deletecookies()
 
 dotenv.load_dotenv()
 
@@ -34,7 +47,7 @@ def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
 
 # Get the urls
 client = reddit_client()
-urls = get_img_url(client=client, sub_name='dankmemes', limit=25)
+urls = get_img_url(client=client, sub_name='memes', limit=1)
 
 # Make insta bot
 bot = bot.Bot()
@@ -42,23 +55,27 @@ bot = bot.Bot()
 # Login
 bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
-#amount = 25
-#for i in range(amount):
-#    image = random.choice(urls)
-#    response = requests.get(image)
-#    with open('image.png', 'wb') as f:
-#        f.write(response.content)
-#        f.close()
+def get_random():
+    amount = 25
+    for i in range(amount):
+        image = random.choice(urls)
+        response = requests.get(image)
+        with open('image.png', 'wb') as f:
+            f.write(response.content)
+            f.close()
 
 # Choose an image and save it
 
 for item in urls:
-    response = requests.get(item)
-    with open('image.png', 'wb') as f:
+    response = requests.get(item, stream=True)
+    fileext = item[-4] + item[-3] + item[-2] + item[-1]
+    #filename = item.split('/')[-1]
+    filename = 'image'+fileext
+    with open(filename,'wb') as f:
         f.write(response.content)
         f.close()
 
-    image = 'image.png'
+    image = f'{filename}'
 
     # Upload photo
     try:
@@ -67,10 +84,5 @@ for item in urls:
     except:
         print("Upload Failed")
 
-
-try:
-    # Delete them damm cookies that keep comming
-    cookie_del = glob.glob("config/*cookie.json")
-    os.remove(cookie_del[0])
-except:
-    print("Error")
+    delete_image(image)
+deletecookies()
