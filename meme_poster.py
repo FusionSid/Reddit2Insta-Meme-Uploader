@@ -37,17 +37,34 @@ def reddit_client():
     )
     return client
 
+def is_image(post):
+    try:
+        return post.post_hint == "image"
+    except AttributeError:
+        return False
+
 # Get top 50 image urls (memes)
 def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
     hot_memes = client.subreddit(sub_name).hot(limit=limit)
     image_urls = []
     for post in hot_memes:
-        image_urls.append(post.url)
+        if is_image(post):
+            image_urls.append(post.url)
+            print(post.url)
     return image_urls
 
 # Get the urls
 client = reddit_client()
-urls = get_img_url(client=client, sub_name='memes', limit=1)
+
+rpsnlist = ['memes', 'dankmemes', 'MemeEconomy', 'darkhumor' ]
+subred = input("Which subreddit/random: ")
+if subred.lower() == "random":
+    subred = random.choice(rpsnlist)
+else:
+    subred = subred
+print(subred)
+
+urls = get_img_url(client=client, sub_name=subred, limit=25)
 
 # Make insta bot
 bot = bot.Bot()
@@ -65,7 +82,6 @@ def get_random():
             f.close()
 
 # Choose an image and save it
-
 for item in urls:
     response = requests.get(item, stream=True)
     fileext = item[-4] + item[-3] + item[-2] + item[-1]
@@ -79,10 +95,10 @@ for item in urls:
 
     # Upload photo
     try:
-        bot.upload_photo(image, caption='')
+        bot.upload_photo(image, caption=f'Subreddit: {subred}')
+        delete_image(image)
         print("Done")
     except:
         print("Upload Failed")
-
-    delete_image(image)
+        
 deletecookies()
