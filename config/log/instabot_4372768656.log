@@ -1,0 +1,98 @@
+2021-09-28 15:06:17,993 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2021-09-28 15:06:17,993 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/instabot/bot/bot.py
+2021-09-28 15:06:18,011 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2021-09-28 15:06:18,404 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2021-09-28 15:06:18,779 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2021-09-28 15:06:19,124 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2021-09-28 15:06:19,427 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2021-09-28 15:06:21,393 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [200]>
+2021-09-28 15:06:21,496 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'never_gonnagive'!
+2021-09-28 15:06:21,497 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: True
+2021-09-28 15:06:22,007 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2021-09-28 15:06:25,386 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2021-09-28 15:06:25,711 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: zr/token/result/?device_id=android-f3b834f4e29269d3&token_hash=&custom_device_id=android-f3b834f4e29269d3&fetch_reason=token_expired returned response: <Response [200]>
+2021-09-28 15:06:26,103 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: multiple_accounts/get_account_family/ returned response: <Response [200]>
+2021-09-28 15:06:26,514 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2021-09-28 15:06:27,931 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: igtv/browse_feed/?prefetch=1 returned response: <Response [200]>
+2021-09-28 15:06:28,329 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: creatives/ar_class/ returned response: <Response [200]>
+2021-09-28 15:06:29,453 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2021-09-28 15:06:32,398 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2021-09-28 15:06:32,807 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: media/blocked/ returned response: <Response [200]>
+2021-09-28 15:06:34,089 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/ returned response: <Response [200]>
+2021-09-28 15:06:34,521 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: loom/fetch_config/ returned response: <Response [200]>
+2021-09-28 15:06:35,112 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: scores/bootstrap/users/?surfaces=["autocomplete_user_list","coefficient_besties_list_ranking","coefficient_rank_recipient_user_suggestion","coefficient_ios_section_test_bootstrap_ranking","coefficient_direct_recipients_ranking_variant_2"] returned response: <Response [200]>
+2021-09-28 15:06:35,524 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/eligibility/get_monetization_products_eligibility_data/?product_types=branded_content returned response: <Response [200]>
+2021-09-28 15:06:35,934 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: business/branded_content/should_require_professional_account/ returned response: <Response [200]>
+2021-09-28 15:06:36,281 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: linked_accounts/get_linkage_status/ returned response: <Response [200]>
+2021-09-28 15:06:36,718 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: locations/request_country/ returned response: <Response [200]>
+2021-09-28 15:06:37,070 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: qp/get_cooldowns/?signed_body=signed_body=4b9c516a5410a3bc128e09c6104a7f042146b9c2023870560c63a43a7f66781c.4&ig_sig_key_version=4&ig_sig_key_version=4 returned response: <Response [200]>
+2021-09-28 15:06:37,441 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/arlink_download_info/?version_override=2.2.1 returned response: <Response [200]>
+2021-09-28 15:06:38,648 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/44906261598/info/ returned response: <Response [200]>
+2021-09-28 15:06:39,567 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [200]>
+2021-09-28 15:06:40,643 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&thread_message_limit=10&persistentBadging=true&limit=20 returned response: <Response [200]>
+2021-09-28 15:06:41,143 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/inbox/?visual_message_return_type=unseen&persistentBadging=true&limit=0 returned response: <Response [200]>
+2021-09-28 15:06:43,897 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: discover/topical_explore/?is_prefetch=true&omit_cover_media=true&use_sectional_payload=true&timezone_offset=0&session_id=ccb45711-b710-4f01-85f0-08af9f926ae1&include_fixed_destinations=true returned response: <Response [200]>
+2021-09-28 15:06:44,345 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: notifications/badge/ returned response: <Response [200]>
+2021-09-28 15:06:44,974 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qp/batch_fetch/ returned response: <Response [200]>
+2021-09-28 15:06:45,039 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: /Users/sid/Desktop/Coding/VS Code/Python/Reddit_Meme-Insta_Automator/config/never_gonnagive.checkpoint
+2021-09-28 15:07:10,831 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:07:11,271 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:07:11,457 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:07:34,669 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:07:35,043 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:07:35,043 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:08:00,108 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:08:00,624 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:08:00,710 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:08:03,374 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-09-28 15:08:03,375 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is not uploaded.
+2021-09-28 15:08:06,352 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-09-28 15:08:06,397 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.png' is not uploaded.
+2021-09-28 15:08:30,232 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:08:30,601 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:08:30,602 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:08:43,113 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-09-28 15:08:43,158 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.gif' is not uploaded.
+2021-09-28 15:09:06,577 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:09:06,886 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:09:06,931 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:09:30,423 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:09:30,759 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:09:30,759 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:09:34,280 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-09-28 15:09:34,281 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is not uploaded.
+2021-09-28 15:09:57,271 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:09:57,610 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:09:57,610 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:10:33,841 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:10:34,244 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:10:34,401 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:10:56,123 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:10:56,519 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:10:56,519 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:11:20,985 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:11:21,395 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:11:21,395 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:11:44,338 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:11:44,675 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:11:44,676 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:12:06,688 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:12:08,084 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:12:08,085 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:12:10,888 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-09-28 15:12:10,888 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is not uploaded.
+2021-09-28 15:12:35,328 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:12:35,726 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:12:35,727 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:12:58,158 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:12:58,480 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:12:58,480 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:13:25,297 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-09-28 15:13:25,701 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-09-28 15:13:25,709 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.jpg' is uploaded.
+2021-09-28 15:13:30,517 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-09-28 15:13:30,518 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.png' is not uploaded.
+2021-09-28 15:13:40,150 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-09-28 15:13:40,189 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'image.gif' is not uploaded.
+2021-09-28 15:13:40,219 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: /Users/sid/Desktop/Coding/VS Code/Python/Reddit_Meme-Insta_Automator/config/never_gonnagive.checkpoint
+2021-09-28 15:13:40,243 - instabot version: 0.117.0 (bot) - INFO - Total requests: 191

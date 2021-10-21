@@ -64,22 +64,13 @@ else:
     subred = subred
 print(subred)
 
-urls = get_img_url(client=client, sub_name=subred, limit=25)
+urls = get_img_url(client=client, sub_name=subred, limit=50)
 
 # Make insta bot
 bot = bot.Bot()
 
 # Login
 bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
-
-def get_random():
-    amount = 25
-    for i in range(amount):
-        image = random.choice(urls)
-        response = requests.get(image)
-        with open('image.png', 'wb') as f:
-            f.write(response.content)
-            f.close()
 
 # Choose an image and save it
 for item in urls:
@@ -100,5 +91,5 @@ for item in urls:
         print("Done")
     except:
         print("Upload Failed")
-        
+
 deletecookies()
