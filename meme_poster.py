@@ -14,18 +14,6 @@ def deletecookies():
     except:
         print("Error")
 
-def delete_image(image):
-    if image.endswith('.jpg'):
-        os.remove(image)
-    elif image.endswith('.png'):
-        os.remove(image)
-    elif image.endswith('.REMOVE_ME'):
-        os.remove(image)
-    else:
-        print("Can't find image")
-
-deletecookies()
-
 dotenv.load_dotenv()
 
 # Create reddit client
@@ -76,20 +64,22 @@ bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 for item in urls:
     response = requests.get(item, stream=True)
     fileext = item[-4] + item[-3] + item[-2] + item[-1]
-    #filename = item.split('/')[-1]
-    filename = 'image'+fileext
-    with open(filename,'wb') as f:
-        f.write(response.content)
-        f.close()
+    if fileext == '.gif':
+        pass
+    else:
+        filename = 'image'+fileext
+        with open(filename,'wb') as f:
+            f.write(response.content)
+            f.close()
 
-    image = f'{filename}'
+        image = f'{filename}'
 
-    # Upload photo
-    try:
-        bot.upload_photo(image, caption=f'Subreddit: {subred}')
-        delete_image(image)
-        print("Done")
-    except:
-        print("Upload Failed")
+        # Upload photo
+        try:
+            bot.upload_photo(image, caption=f'Subreddit: {subred}')
+            os.remove(image)
+            print("Done")
+        except:
+            print("Upload Failed")
 
 deletecookies()
