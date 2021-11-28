@@ -4,6 +4,7 @@ import praw
 import requests
 import dotenv
 import glob
+import wget
 
 def deletecookies():
     try:
@@ -68,15 +69,12 @@ for item in urls:
         pass
     else:
         #filename = item.split('/')[-1]
-        filename = 'image'+fileext
-        response = requests.get(item)
-        with open(filename,'wb') as f:
-            f.write(response.content)
+        filename = f'image{fileext}'
+        filename = wget.download(item)
 
         # Upload photo
         try:
-            with open(image, 'r') as image:
-                bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
+            bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
             os.remove(filename)
         except Exception as e:
             print(f"Error: {e}")
