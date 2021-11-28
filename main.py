@@ -1,6 +1,5 @@
 import os
 from instabot import bot
-import random
 import praw
 import requests
 import dotenv
@@ -64,23 +63,21 @@ bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
 # Choose an image and save it
 for item in urls:
-    response = requests.get(item)
     fileext = item[-4] + item[-3] + item[-2] + item[-1]
     if fileext == '.gif':
         pass
     else:
         #filename = item.split('/')[-1]
         filename = 'image'+fileext
+        response = requests.get(item)
         with open(filename,'wb') as f:
             f.write(response.content)
-            f.close()
-
-        image = f'{filename}'
 
         # Upload photo
         try:
-            bot.upload_photo(image, caption=f'Subreddit: {subred}\nCredit: {item}')
-            os.remove(image)
+            with open(image, 'r') as image:
+                bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
+            os.remove(filename)
         except Exception as e:
             print(f"Error: {e}")
             
