@@ -68,11 +68,9 @@ bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 # Choose an image and save it
 for item in urls:
     for item in item:
-        print(item)
         fileext = item[-4] + item[-3] + item[-2] + item[-1]
         with open('urls.json', 'r') as f:
             data = json.load(f)
-            print(data)
         if item in data:
             pass
         else:
@@ -82,12 +80,13 @@ for item in urls:
         if fileext == '.gif':
             pass
         else:
-            filename = f'image{fileext}'
-            filename = wget.download(url=str(item))
+            filenam = f'image{fileext}'
+            filename = wget.download(url=str(item), out=filenam)
             # Upload photo
             try:
                 bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
                 os.remove(filename)
+                time.sleep(2)
             except Exception as e:
                 print(f"Error: {e}")
             
