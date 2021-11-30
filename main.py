@@ -1,4 +1,6 @@
 import os
+import json
+import time
 from instabot import bot
 import praw
 import requests
@@ -40,7 +42,7 @@ def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
     for post in hot_memes:
         if is_image(post):
             image_urls.append(post.url)
-            print(post.url)
+
     return image_urls
 
 
@@ -56,6 +58,7 @@ for sub_reddit in rpsnlist:
     url = get_img_url(client=client, sub_name=subred, limit=50)
     urls.append(url)
     
+
 # Make insta bot
 bot = bot.Bot()
 
@@ -64,19 +67,28 @@ bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
 # Choose an image and save it
 for item in urls:
-    fileext = item[-4] + item[-3] + item[-2] + item[-1]
-    if fileext == '.gif':
-        pass
-    else:
-        #filename = item.split('/')[-1]
-        filename = f'image{fileext}'
-        filename = wget.download(item)
-
-        # Upload photo
-        try:
-            bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
-            os.remove(filename)
-        except Exception as e:
-            print(f"Error: {e}")
+    for item in item:
+        print(item)
+        fileext = item[-4] + item[-3] + item[-2] + item[-1]
+        with open('urls.json', 'r') as f:
+            data = json.load(f)
+            print(data)
+        if item in data:
+            pass
+        else:
+            data.append(item)
+            with open('urls.json', 'w') as f:
+                json.dump(data, f, indent=4)
+        if fileext == '.gif':
+            pass
+        else:
+            filename = f'image{fileext}'
+            filename = wget.download(url=str(item))
+            # Upload photo
+            try:
+                bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
+                os.remove(filename)
+            except Exception as e:
+                print(f"Error: {e}")
             
 deletecookies()
