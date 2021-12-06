@@ -6,6 +6,7 @@ import praw
 import dotenv
 import glob
 import wget
+from PIL import Image
 
 def deletecookies():
     try:
@@ -86,13 +87,32 @@ for item in urls:
             pass
         else:
             filename = wget.download(url=str(item))
-            # Upload photo
-            try:
-                bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
-                time.sleep(2)
-                os.remove(filename)
-                time.sleep(2)
-            except Exception as e:
-                print(f"Error: {e}")
+            review = input("Type 'r' to review or 'p' to ignore and post\n")
+            if review.lower() == 'r':
+                Img=Image.open(filename)
+                Img.show()
+                delete = input("Type 'd' to delete or 'p' to ignore and post\n")
+                if delete.lower() == 'd':
+                    os.remove(filename)
+                else:
+                    # Upload photo
+                    try:
+                        bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
+                        time.sleep(2)
+                        os.remove(filename)
+                        time.sleep(2)
+                    except Exception as e:
+                        print(f"Error: {e}")
+                os.system('killall Preview')
+            else:
+                # Upload photo
+                try:
+                    bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
+                    time.sleep(2)
+                    os.remove(filename)
+                    time.sleep(2)
+                except Exception as e:
+                    print(f"Error: {e}")
+            
             
 deletecookies()
