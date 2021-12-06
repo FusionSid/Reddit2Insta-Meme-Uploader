@@ -1,7 +1,6 @@
 import os
 import json
 import time
-from instabot import bot
 import praw
 import requests
 import dotenv
@@ -13,9 +12,8 @@ def deletecookies():
         # Delete them damm cookies and other shit that keep comming
         cookie_del = glob.glob("config/*cookie.json")
         os.remove(cookie_del[0])
-        print("Cookies Eaten Successfuly.")
     except:
-        print("Cookies Deletion Failed.")
+        pass
 
 deletecookies()
  
@@ -30,7 +28,6 @@ def reddit_client():
     )
     return client
 
-# Check if url is an image
 def is_image(post):
     try:
         return post.post_hint == "image"
@@ -41,39 +38,29 @@ def is_image(post):
 def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
     hot_memes = client.subreddit(sub_name).hot(limit=limit)
     image_urls = []
-    counter = 0
     for post in hot_memes:
         if is_image(post):
-            print(counter)
             image_urls.append(post.url)
-            counter += 1
 
     return image_urls
 
 
-# Create reddit client
+# Get the urls
 client = reddit_client()
 
 urls = []
 
-# get 50 image urls from each of these subreddits
 rpsnlist = ['memes', 'dankmemes']
 for sub_reddit in rpsnlist:
     subred = sub_reddit
 
-    url = get_img_url(client=client, sub_name=subred, limit=50) 
+    url = get_img_url(client=client, sub_name=subred, limit=50)
     urls.append(url)
     
-# Make insta bot
-bot = bot.Bot()
-
-# Login
-bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
 # Choose an image and save it
 for item in urls:
     for item in item:
-        # get file extension jpg, png, gif, etc
         fileext = item[-4] + item[-3] + item[-2] + item[-1]
         with open('urls.json', 'r') as f:
             data = json.load(f)
@@ -86,10 +73,10 @@ for item in urls:
         if fileext == '.gif':
             pass
         else:
+            filenam = f'image{fileext}'
             filename = wget.download(url=str(item))
             # Upload photo
             try:
-                bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
                 os.remove(filename)
                 time.sleep(2)
             except Exception as e:
