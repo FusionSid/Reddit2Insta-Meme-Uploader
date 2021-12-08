@@ -6,6 +6,18 @@ import praw
 import dotenv
 import glob
 import wget
+import pyttsx3
+from datetime import datetime
+
+def log(log):
+    now = datetime.now()
+    timern = now.strftime("%d/%m/%Y %H:%M:%S")
+
+    with open('log.txt', 'a') as f:
+        f.write('\n')
+        f.write(f"{timern} | {log}")
+
+s = pyttsx3.init()
 
 def deletecookies():
     try:
@@ -13,8 +25,10 @@ def deletecookies():
         cookie_del = glob.glob("config/*cookie.json")
         os.remove(cookie_del[0])
         print("Cookies Eaten Successfuly.")
+        log("Cookies Eaten Successfuly.")
     except:
         print("Cookies Deletion Failed.")
+        log("Cookies Deletion Failed.")
 
 deletecookies()
  
@@ -40,15 +54,15 @@ def is_image(post):
 def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
     hot_memes = client.subreddit(sub_name).hot(limit=limit)
     image_urls = []
-    counter = 0
     for post in hot_memes:
         if is_image(post):
-            print(counter)
             image_urls.append(post.url)
-            counter += 1
 
     return image_urls
 
+# ----------Start------------
+
+log("----------START----------")
 
 # Create reddit client
 client = reddit_client()
@@ -59,9 +73,10 @@ urls = []
 rpsnlist = ['memes', 'dankmemes']
 for sub_reddit in rpsnlist:
     subred = sub_reddit
-
-    url = get_img_url(client=client, sub_name=subred, limit=50) 
+    url = get_img_url(client=client, sub_name=subred, limit=100) 
     urls.append(url)
+    
+log("Downloaded urls")
     
 # Make insta bot
 bot = bot.Bot()
@@ -69,7 +84,14 @@ bot = bot.Bot()
 # Login
 bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
+log("Logged In Successfully!")
+s.say("Logged In Successfully!")
+s.runAndWait()
+
 # Choose an image and save it
+ncount = 0
+ocount = 0
+gcount = 0
 for item in urls:
     for item in item:
         # get file extension jpg, png, gif, etc
@@ -78,21 +100,33 @@ for item in urls:
             data = json.load(f)
         if item in data:
             pass
+            ocount += 1
         else:
             data.append(item)
             with open('urls.json', 'w') as f:
                 json.dump(data, f, indent=4)
-        if fileext == '.gif':
-            pass
-        else:
-            filename = wget.download(url=str(item))
-            # Upload photo
-            try:
-                bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
-                time.sleep(2)
+            ncount += 1
+            if fileext == '.gif':
+                pass
+                gcount += 1
+            else:
+                filename = wget.download(url=str(item))
+                # Upload photo
+                try:
+                    bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
+                    time.sleep(2)
+                except Exception as e:
+                    print(f"Error: {e}")
+                    log((f"Error: {e}"))
                 os.remove(filename)
-                time.sleep(2)
-            except Exception as e:
-                print(f"Error: {e}")
-            
+
+log(f"{ncount} new urls")
+log(f"{ocount} old urls")
+log(f"{gcount} gifs")
+log("----------END----------")
+
+os.system('qc')
+s.say("Done!")
+s.runAndWait()
+
 deletecookies()
