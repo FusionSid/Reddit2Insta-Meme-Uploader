@@ -1,21 +1,52 @@
 # Reddit2Insta-Meme-Uploader
 
-I have an insta account where i post memes. 
-Normaly i would post memes by surfing reddit, finding somethings i like, downloading it then posting it.
-But that takes a lot of time. 
-Luckily i like to code so instead of doing all of that im gonna spend 69 hours (haha im so funny with my primary 10 year old humor) coding a bot that can do it for me.
+## The issue:
 
-To use this bot just create a .env file and put this in it:
+I have an instagram account where I post memes, The problem is that to post 1 meme I would have to got through reddit, find a meme I like, download it, post it, and lastly credit the author.
 
-CLIENT_ID = 
+I did this for the first 300 memes on my page and then I bored and stoped posting.
 
-CLIENT_SECRET = 
-
-USER_AGENT = memes-fastapi
-
-insta_user = 
-
-insta_pass = 
+But since I love to code I decided to make a scrip that can do this all for me :)
 
 
-Ad you api keys and instagram username/pass and it shouls work from there. Any issuses contact me.
+
+
+
+## **How to use & Setup:**
+
+### 1. **Get your Client ID and Client Secret**
+To get the `CLIENT_ID` and `CLIENT_SECRET` go to this [site](https://www.reddit.com/prefs/apps/) and create a new app. 
+
+**App Settings:**
+
+Choose script and make the name/description of the app whatever you want.
+
+After that make the `redirect url` = `http://127.0.0.1:8000`
+
+
+
+### 2. **Next create a `.env` file in the same directory as `main.py`**
+### 3. **Add this to the `.env` file:**
+
+```
+CLIENT_ID = <Reddit client id> 
+CLIENT_SECRET = <Reddit client secret>
+insta_user = <Your instagram username>
+insta_pass = <Your instagram password>
+```
+
+### 4. **Install all requirements**
+```
+pip install -r requirements.txt
+```
+
+### 5. **Clearing**
+
+Delete `urls.json` and `log.txt`. Then run `new.py` It will ask you to confirm-just type `y` and then hit enter.
+
+
+
+### **If you have any issues contact me!** 
+
+**Im most active on discord so that would be a good way to message me
+Discord Tag = `FusionSid#3645`**
