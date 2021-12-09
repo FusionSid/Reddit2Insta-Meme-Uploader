@@ -130,4 +130,4 @@ s.say("Done!")
 s.runAndWait()
 
 deletecookies()
-log("----------END----------")
+log("-----------END-----------")
