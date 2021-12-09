@@ -99,7 +99,7 @@ for item in urls:
         with open('urls.json', 'r') as f:
             data = json.load(f)
         if item in data:
-            pass
+            pass  
             ocount += 1
         else:
             data.append(item)
@@ -121,9 +121,9 @@ for item in urls:
                 os.remove(filename)
 
 # Log
-log(f"{ncount} new urls")
-log(f"{ocount} old urls")
-log(f"{gcount} gifs")
+log(f"{ncount}/200 new urls")
+log(f"{ocount}/200 old urls")
+log(f"{gcount}/200 gifs")
 
 # os.system('qc')
 s.say("Done!")

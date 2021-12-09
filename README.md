@@ -6,7 +6,7 @@ I have an instagram account where I post memes, The problem is that to post 1 me
 
 I did this for the first 300 memes on my page and then I bored and stoped posting.
 
-But since I love to code I decided to make a scrip that can do this all for me :)
+But since I love to code I decided to make a script that can do this all for me :)
 
 ## **How to use & Setup:**
 
