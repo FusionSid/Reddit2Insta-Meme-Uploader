@@ -120,13 +120,14 @@ for item in urls:
                     log((f"Error: {e}"))
                 os.remove(filename)
 
+# Log
 log(f"{ncount} new urls")
 log(f"{ocount} old urls")
 log(f"{gcount} gifs")
-log("----------END----------")
 
-os.system('qc')
+# os.system('qc')
 s.say("Done!")
 s.runAndWait()
 
 deletecookies()
+log("----------END----------")

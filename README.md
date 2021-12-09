@@ -38,12 +38,26 @@ pip install -r requirements.txt
 
 Delete `urls.json` and `log.txt`. Then run `new.py` It will ask you to confirm-just type `y` and then hit enter.
 
-Next go to `main.py` and delete Line 128 (os.system('qc')), this line is a custom shell script I made but it won't work on your computer unless you donwload and set it up.
+Next go to `main.py` and delete Line 128 (os.system('qc')), this line is a custom shell script I made but it won't work on your computer unless you download and set it up.
 
 If you want to learn about this script, look/read [this](https://github.com/FusionSid/Shell-Scripts)
 
 ### 6. **Run/Done**
 Yay youre done. If you followed the steps correctly you should be done. Now all you have to do is `python3 main.py` and the script will do everything by itself. If you turn up your volume the script will say "Done" once the script is done
+
+
+**Note:** 
+
+**Left Over Images:**
+Sometimes the script will fail to delete an image after posting and might leave behing some images. If so just delete them or not. It won't affect the performance so it doesn't matter.
+
+**Contributing**
+If you have any suggestions for the script or want to make it better, Fork the repo and make your edits. Then make a pull request. I'll test it and if its good i'll add your edit to the script.
+
+**Common Errors:**
+While the script is running, many errors can occur. Most of the time its ok and as long as the script doesn't stop you should be fine. You can always read `log.txt`.
+If you run the script to much you might get a rate limit ban. If so, please stop the script (if you dont the ban time will increase) and retry a day later. 
+
 
 ### **If you have any issues contact me!** 
 
