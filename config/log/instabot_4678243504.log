@@ -604,3 +604,153 @@ __s={"js":{"51":"/static/bundles/metro/oz-player.main.js/80223187b4e7.js","52":"
 2021-12-11 15:34:05,556 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
 2021-12-11 15:34:05,556 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'az7tfkvjoo481.jpg' is uploaded.
 2021-12-11 15:34:36,082 - instabot version: 0.117.0 (api) - WARNING - HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /api/v1/media/configure/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1172ab220>: Failed to establish a new connection: [Errno 65] No route to host'))
+2021-12-11 15:34:54,717 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:34:54,963 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:34:54,963 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'myna1moajo481.jpg' is uploaded.
+2021-12-11 15:35:20,368 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:35:20,612 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:35:20,612 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'z9roldclus481.jpg' is uploaded.
+2021-12-11 15:35:26,171 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-12-11 15:35:26,171 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '1lr1g8zyuo481.png' is not uploaded.
+2021-12-11 15:35:31,681 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:35:31,682 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'h30bi3dipp481.jpg' is not uploaded.
+2021-12-11 15:35:55,359 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:35:55,672 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:35:55,673 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'myoyiyolfq481.jpg' is uploaded.
+2021-12-11 15:36:02,926 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-12-11 15:36:02,927 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'y9ni2vu12s481.png' is not uploaded.
+2021-12-11 15:36:25,814 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:36:26,203 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:36:26,204 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'sq304mk94s481.jpg' is uploaded.
+2021-12-11 15:36:52,298 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:36:52,558 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:36:52,559 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'fgqtkhnvno481.jpg' is uploaded.
+2021-12-11 15:36:58,118 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:36:58,119 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '37tzlww1on481.png' is not uploaded.
+2021-12-11 15:37:22,037 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:37:22,299 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:37:22,300 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'wvc2csa9qs481.jpg' is uploaded.
+2021-12-11 15:37:45,604 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:37:46,144 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:37:46,144 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '1k8ub6kwkm481.jpg' is uploaded.
+2021-12-11 15:38:12,166 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:38:12,426 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:38:12,427 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '9z0aojae9p481.jpg' is uploaded.
+2021-12-11 15:38:36,958 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:38:37,193 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:38:37,194 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'a4yogx2kis481.jpg' is uploaded.
+2021-12-11 15:38:42,101 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:38:42,101 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'oekc830cjq481.jpg' is not uploaded.
+2021-12-11 15:39:05,995 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:39:06,268 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:39:06,269 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'onxbtgvhpn481.jpg' is uploaded.
+2021-12-11 15:39:33,303 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:39:33,553 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:39:33,553 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'zzez0b2goq481.jpg' is uploaded.
+2021-12-11 15:39:40,383 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-12-11 15:39:40,384 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'p859fjhp6q481.png' is not uploaded.
+2021-12-11 15:40:05,910 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:40:06,179 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:40:06,179 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '7mxkggrh5p481.jpg' is uploaded.
+2021-12-11 15:40:29,895 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:40:30,162 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:40:30,162 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'bfynfyh4mn481.jpg' is uploaded.
+2021-12-11 15:40:56,212 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:40:56,451 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:40:56,452 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'roc5h8uoeq481.jpg' is uploaded.
+2021-12-11 15:41:20,174 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:41:20,476 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:41:20,477 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '4lohk9tbto481.jpg' is uploaded.
+2021-12-11 15:41:44,855 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:41:45,121 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:41:45,122 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'ycffj3oivq481.jpg' is uploaded.
+2021-12-11 15:42:15,616 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:42:15,865 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:42:15,866 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'ml9gx1trys481.jpg' is uploaded.
+2021-12-11 15:42:39,543 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:42:47,376 - instabot version: 0.117.0 (api) - WARNING - HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /api/v1/qe/expose/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1172aafe0>: Failed to establish a new connection: [Errno 65] No route to host'))
+2021-12-11 15:42:47,377 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'ejodi7z2ir481.jpg' is uploaded.
+2021-12-11 15:42:51,708 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:42:51,708 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'or9a3g4gdp481.jpg' is not uploaded.
+2021-12-11 15:43:16,101 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:43:16,410 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:43:16,410 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'hzvz0le0ns481.jpg' is uploaded.
+2021-12-11 15:43:46,560 - instabot version: 0.117.0 (api) - WARNING - HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /api/v1/media/configure/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1172a9390>: Failed to establish a new connection: [Errno 65] No route to host'))
+2021-12-11 15:44:05,779 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:44:06,023 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:44:06,024 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'fzs8pfmnas481.jpg' is uploaded.
+2021-12-11 15:44:10,971 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:44:10,971 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'e4jm0q94fr481.jpg' is not uploaded.
+2021-12-11 15:44:35,715 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:44:35,964 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:44:35,965 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'gb7xmwbadt481.jpg' is uploaded.
+2021-12-11 15:45:00,909 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:45:01,158 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:45:01,159 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'z2qq8tzfsp481.jpg' is uploaded.
+2021-12-11 15:45:04,913 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:45:04,913 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '10bdfe37np481.jpg' is not uploaded.
+2021-12-11 15:45:30,515 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:45:30,758 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:45:30,758 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '2jin3autlr481.jpg' is uploaded.
+2021-12-11 15:45:56,550 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:45:56,821 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:45:56,822 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'oyd8r1lm1s481.jpg' is uploaded.
+2021-12-11 15:46:22,144 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:46:22,396 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:46:22,397 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'x2p8vsnrft481.jpg' is uploaded.
+2021-12-11 15:46:26,275 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:46:26,275 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '1tyq30ae3t481.jpg' is not uploaded.
+2021-12-11 15:46:31,769 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:46:31,770 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 's0y18uf79r481.jpg' is not uploaded.
+2021-12-11 15:46:35,152 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:46:35,152 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '6w4x67umuq481.jpg' is not uploaded.
+2021-12-11 15:46:38,231 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:46:38,232 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '0frbufuu2q481.jpg' is not uploaded.
+2021-12-11 15:47:01,697 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:47:02,096 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:47:02,097 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'mndhh36mmr481.jpg' is uploaded.
+2021-12-11 15:47:07,099 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:47:07,100 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'fmlr8hwaos481.jpg' is not uploaded.
+2021-12-11 15:47:33,767 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:47:34,033 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:47:34,034 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'pd97j7jeyo481.jpg' is uploaded.
+2021-12-11 15:47:40,070 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-12-11 15:47:40,070 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'pkeg0i6hmo481.png' is not uploaded.
+2021-12-11 15:48:04,757 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:48:05,018 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:48:05,019 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '80pyfm2xdr481.jpg' is uploaded.
+2021-12-11 15:48:29,522 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:48:31,878 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:48:31,878 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'fozvhw7waq481.jpg' is uploaded.
+2021-12-11 15:48:56,298 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:48:56,597 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:48:56,598 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'xlv049odms481.jpg' is uploaded.
+2021-12-11 15:49:21,660 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:49:21,944 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:49:21,944 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'jjbr9q9uqr481.jpg' is uploaded.
+2021-12-11 15:49:58,421 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:49:58,687 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:49:58,688 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'vg3osk2fit481.jpg' is uploaded.
+2021-12-11 15:50:05,003 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-12-11 15:50:05,012 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '1c9at3yqmq481.png' is not uploaded.
+2021-12-11 15:50:30,679 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:50:30,947 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:50:30,947 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '3jqtv4me7t481.jpg' is uploaded.
+2021-12-11 15:50:37,140 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [400]>
+2021-12-11 15:50:37,141 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'hlwhhyt1ws481.png' is not uploaded.
+2021-12-11 15:51:05,922 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:51:06,213 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:51:06,214 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'zb56hri06s481.jpg' is uploaded.
+2021-12-11 15:51:31,498 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:51:31,751 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:51:31,752 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'mk4gpvbfrr481.jpg' is uploaded.
+2021-12-11 15:51:56,897 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:51:57,220 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:51:57,221 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'j4odt9cbur481.jpg' is uploaded.
+2021-12-11 15:52:21,684 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/? returned response: <Response [200]>
+2021-12-11 15:52:21,954 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-12-11 15:52:21,954 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '6fpw20xg1t481.jpg' is uploaded.
+2021-12-11 15:52:26,207 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-12-11 15:52:26,208 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'hkq5w2kurr481.jpg' is not uploaded.
+2021-12-11 15:52:31,310 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: /Users/siddheshzantye/Desktop/Coding/Python/Reddit2Insta-Meme-Uploader/config/never_gonnagive.checkpoint
+2021-12-11 15:52:31,312 - instabot version: 0.117.0 (bot) - INFO - Total requests: 223
