@@ -30,8 +30,8 @@ def deletecookies():
         print("Cookies Deletion Failed.")
         log("Cookies Deletion Failed.")
 
+log("----------START----------")
 deletecookies()
- 
 dotenv.load_dotenv()
 
 # Create reddit client
@@ -61,8 +61,6 @@ def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
     return image_urls
 
 # ----------Start------------
-
-log("----------START----------")
 
 # Create reddit client
 client = reddit_client()
