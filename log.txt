@@ -57,3 +57,11 @@
 11/12/2021 15:52:28 | 32/200 gifs
 11/12/2021 15:52:31 | Cookies Eaten Successfuly.
 11/12/2021 15:52:31 | -----------END-----------
+14/12/2021 06:33:20 | ----------START----------
+14/12/2021 06:33:20 | Cookies Deletion Failed.
+14/12/2021 06:33:47 | Downloaded urls
+14/12/2021 06:35:15 | Logged In Successfully!
+15/12/2021 12:28:49 | ----------START----------
+15/12/2021 12:28:49 | Cookies Eaten Successfuly.
+15/12/2021 12:28:57 | Downloaded urls
+15/12/2021 12:30:56 | Logged In Successfully!
