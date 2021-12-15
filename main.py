@@ -1,3 +1,6 @@
+# If you are reading this. I am so so so sorry that you have to read this piece of shit, buggy, not orginized code.
+
+# fucking imports
 import os
 import json
 import time
@@ -9,6 +12,9 @@ import wget
 import pyttsx3
 from datetime import datetime
 
+s = pyttsx3.init()
+
+# Logging cause i like too.
 def log(log):
     now = datetime.now()
     timern = now.strftime("%d/%m/%Y %H:%M:%S")
@@ -17,11 +23,9 @@ def log(log):
         f.write('\n')
         f.write(f"{timern} | {log}")
 
-s = pyttsx3.init()
-
+# For Deleting them damm cookies and other shit that keep comming
 def deletecookies():
     try:
-        # Delete them damm cookies and other shit that keep comming
         cookie_del = glob.glob("config/*cookie.json")
         os.remove(cookie_del[0])
         print("Cookies Eaten Successfuly.")
@@ -29,10 +33,6 @@ def deletecookies():
     except:
         print("Cookies Deletion Failed.")
         log("Cookies Deletion Failed.")
-
-log("----------START----------")
-deletecookies()
-dotenv.load_dotenv()
 
 # Create reddit client
 def reddit_client():
@@ -50,7 +50,7 @@ def is_image(post):
     except AttributeError:
         return False
 
-# Get top 50 image urls (memes)
+# Get top 100 image urls (memes)
 def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
     hot_memes = client.subreddit(sub_name).hot(limit=limit)
     image_urls = []
@@ -60,14 +60,17 @@ def get_img_url(client: praw.Reddit, sub_name: str, limit: int):
 
     return image_urls
 
-# ----------Start------------
+
+log("----------START----------")
+deletecookies()
+dotenv.load_dotenv()
 
 # Create reddit client
 client = reddit_client()
 
 urls = []
 
-# get 50 image urls from each of these subreddits
+# get 100 image urls from each of these subreddits
 rpsnlist = ['memes', 'dankmemes']
 for sub_reddit in rpsnlist:
     subred = sub_reddit
@@ -90,7 +93,7 @@ s.runAndWait()
 ncount = 0
 ocount = 0
 gcount = 0
-ht = ["#memes #funny #reddit #dankmemes #lol #memesdaily #humor #dank #meme #followorgetrickrolled #image #random #images"]
+ht = ["#memes #funny #reddit #dankmemes #lol #memesdaily #humor #dank #meme #followorgetrickrolled #image #random #images"] # hastags
 for item in urls:
     for item in item:
         # get file extension jpg, png, gif, etc
