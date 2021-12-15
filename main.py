@@ -90,6 +90,7 @@ s.runAndWait()
 ncount = 0
 ocount = 0
 gcount = 0
+ht = ["#memes #funny #reddit #dankmemes #lol #memesdaily #humor #dank #meme #followorgetrickrolled #image #random #images"]
 for item in urls:
     for item in item:
         # get file extension jpg, png, gif, etc
@@ -111,11 +112,11 @@ for item in urls:
                 filename = wget.download(url=str(item))
                 # Upload photo
                 try:
-                    bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}')
+                    bot.upload_photo(filename, caption=f'Subreddit: {subred}\nCredit: {item}\n\n{ht}')
                     time.sleep(2)
                 except Exception as e:
                     print(f"Error: {e}")
-                    log((f"Error: {e}"))
+                    log(f"Error: {e}")
                 os.remove(filename)
 
 # Log
