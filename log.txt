@@ -89,3 +89,18 @@
 16/12/2021 12:30:04 | 5/200 gifs
 16/12/2021 12:30:07 | Cookies Eaten Successfuly.
 16/12/2021 12:30:07 | -----------END-----------
+17/12/2021 15:51:05 | ----------START----------
+17/12/2021 15:51:05 | Cookies Deletion Failed.
+17/12/2021 15:51:32 | Downloaded urls
+17/12/2021 15:53:08 | Logged In Successfully!
+17/12/2021 15:56:27 | Error: Unsupported format
+17/12/2021 15:59:01 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1639709933952_0_5492529020 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1074db220>: Failed to establish a new connection: [Errno 65] No route to host'))
+17/12/2021 16:03:41 | Error: Unsupported format
+18/12/2021 11:08:58 | ----------START----------
+18/12/2021 11:08:58 | Cookies Eaten Successfuly.
+18/12/2021 11:09:02 | Downloaded urls
+18/12/2021 11:11:43 | Logged In Successfully!
+18/12/2021 11:13:44 | Error: Unsupported format
+18/12/2021 11:16:05 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1639779358162_0_4675972528 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x11bfe4070>: Failed to establish a new connection: [Errno 65] No route to host'))
+18/12/2021 11:22:59 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1639779771307_0_3087035796 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x11c276230>: Failed to establish a new connection: [Errno 65] No route to host'))
+18/12/2021 11:24:16 | Error: Unsupported format
