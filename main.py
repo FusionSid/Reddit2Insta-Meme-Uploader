@@ -93,7 +93,7 @@ s.runAndWait()
 ncount = 0
 ocount = 0
 gcount = 0
-ht = ["#memes #funny #reddit #dankmemes #lol #memesdaily #humor #dank #meme #followorgetrickrolled #image #random #images"] # hastags
+ht = "[#memes #funny #reddit #dankmemes #lol #memesdaily #humor #dank #meme #followorgetrickrolled #image #random #images]" # hastags
 for item in urls:
     for item in item:
         # get file extension jpg, png, gif, etc
