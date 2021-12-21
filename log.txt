@@ -121,3 +121,19 @@
 19/12/2021 22:43:28 | Error: Unsupported format
 19/12/2021 22:44:30 | Error: Unsupported format
 19/12/2021 22:52:30 | Error: Unsupported format
+21/12/2021 11:48:41 | ----------START----------
+21/12/2021 11:48:41 | Cookies Eaten Successfuly.
+21/12/2021 11:48:45 | Downloaded urls
+21/12/2021 11:50:11 | Logged In Successfully!
+21/12/2021 11:52:10 | Error: Unsupported format
+21/12/2021 11:52:50 | Error: Unsupported format
+21/12/2021 11:54:36 | ----------START----------
+21/12/2021 11:54:36 | Cookies Eaten Successfuly.
+21/12/2021 11:54:50 | Downloaded urls
+21/12/2021 11:56:51 | Logged In Successfully!
+21/12/2021 12:11:33 | Error: Unsupported format
+21/12/2021 12:12:45 | Error: Unsupported format
+21/12/2021 12:20:37 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1640042429437_0_4583659434 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x117a6e860>: Failed to establish a new connection: [Errno 65] No route to host'))
+21/12/2021 12:24:59 | Error: Unsupported format
+21/12/2021 12:31:47 | Error: Unsupported format
+21/12/2021 12:31:56 | Error: Unsupported format
