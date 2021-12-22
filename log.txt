@@ -137,3 +137,8 @@
 21/12/2021 12:24:59 | Error: Unsupported format
 21/12/2021 12:31:47 | Error: Unsupported format
 21/12/2021 12:31:56 | Error: Unsupported format
+22/12/2021 12:58:27 | ----------START----------
+22/12/2021 12:58:27 | Cookies Deletion Failed.
+22/12/2021 12:58:31 | Downloaded urls
+22/12/2021 12:59:31 | Logged In Successfully!
+22/12/2021 13:07:56 | Error: Unsupported format
