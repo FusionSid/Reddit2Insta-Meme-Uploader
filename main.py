@@ -9,10 +9,8 @@ import praw
 import dotenv
 import glob
 import wget
-import pyttsx3
 from datetime import datetime
 
-s = pyttsx3.init()
 
 # Logging cause i like too.
 def log(log):
@@ -86,8 +84,6 @@ bot = bot.Bot()
 bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
 log("Logged In Successfully!")
-s.say("Logged In Successfully!")
-s.runAndWait()
 
 # Choose an image and save it
 ncount = 0
@@ -126,10 +122,6 @@ for item in urls:
 log(f"{ncount}/200 new urls")
 log(f"{ocount}/200 old urls")
 log(f"{gcount}/200 gifs")
-
-# os.system('qc')
-s.say("Done!")
-s.runAndWait()
 
 deletecookies()
 log("-----------END-----------")
