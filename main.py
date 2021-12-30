@@ -17,7 +17,7 @@ def log(log):
     now = datetime.now()
     timern = now.strftime("%d/%m/%Y %H:%M:%S")
 
-    with open('log.txt', 'a') as -f:
+    with open('log.txt', 'a') as f:
         f.write('\n')
         f.write(f"{timern} | {log}")
 
