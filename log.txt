@@ -309,3 +309,39 @@
 02/01/2022 21:04:14 | 39/200 gifs
 02/01/2022 21:04:14 | Cookies Eaten Successfuly.
 02/01/2022 21:04:14 | -----------END-----------
+04/01/2022 00:13:37 | ----------START----------
+04/01/2022 00:13:37 | Cookies Deletion Failed.
+04/01/2022 00:14:16 | Downloaded urls
+04/01/2022 00:16:32 | Logged In Successfully!
+04/01/2022 00:24:10 | Error: Unsupported format
+04/01/2022 00:27:10 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641209222552_0_3871446452 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1038314e0>: Failed to establish a new connection: [Errno 65] No route to host'))
+04/01/2022 00:27:36 | Error: Unsupported format
+04/01/2022 00:27:44 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641209264387_0_2957567228 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+04/01/2022 00:27:58 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641209278501_0_9678860631 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+04/01/2022 00:28:47 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641209326586_0_9869385158 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+04/01/2022 00:29:12 | Error: Unsupported format
+04/01/2022 00:30:12 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641209412367_0_4390941860 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+04/01/2022 00:31:49 | Error: Unsupported format
+04/01/2022 00:33:48 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641209628222_0_5615250430 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+04/01/2022 00:34:09 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641209648925_0_2525374566 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+04/01/2022 00:34:34 | 191/200 new urls
+04/01/2022 00:34:34 | 0/200 old urls
+04/01/2022 00:34:34 | 39/200 gifs
+04/01/2022 00:34:34 | Cookies Eaten Successfuly.
+04/01/2022 00:34:34 | -----------END-----------
+04/01/2022 16:00:38 | ----------START----------
+04/01/2022 16:00:38 | Cookies Deletion Failed.
+04/01/2022 16:01:15 | Downloaded urls
+04/01/2022 16:03:56 | Logged In Successfully!
+04/01/2022 16:04:57 | Error: Unsupported format
+04/01/2022 16:08:31 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641265703529_0_6953113765 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x105236b60>: Failed to establish a new connection: [Errno 65] No route to host'))
+04/01/2022 16:09:55 | Error: Unsupported format
+04/01/2022 16:10:30 | Error: Unsupported format
+04/01/2022 16:11:57 | Error: Unsupported format
+04/01/2022 16:13:23 | Error: Unsupported format
+04/01/2022 16:14:59 | Error: Unsupported format
+04/01/2022 16:15:07 | 164/200 new urls
+04/01/2022 16:15:07 | 24/200 old urls
+04/01/2022 16:15:07 | 31/200 gifs
+04/01/2022 16:15:07 | Cookies Eaten Successfuly.
+04/01/2022 16:15:07 | -----------END-----------
