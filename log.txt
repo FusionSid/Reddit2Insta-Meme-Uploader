@@ -345,3 +345,22 @@
 04/01/2022 16:15:07 | 31/200 gifs
 04/01/2022 16:15:07 | Cookies Eaten Successfuly.
 04/01/2022 16:15:07 | -----------END-----------
+08/01/2022 12:48:20 | ----------START----------
+08/01/2022 12:48:20 | Cookies Deletion Failed.
+08/01/2022 12:48:25 | Downloaded urls
+08/01/2022 12:49:16 | Logged In Successfully!
+08/01/2022 12:49:36 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641599368750_0_1892266649 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106000280>: Failed to establish a new connection: [Errno 65] No route to host'))
+08/01/2022 12:57:05 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641599817329_0_8254899793 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x105e411e0>: Failed to establish a new connection: [Errno 65] No route to host'))
+08/01/2022 13:07:31 | Error: Unsupported format
+08/01/2022 13:08:25 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641600497865_0_2758075983 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106000bb0>: Failed to establish a new connection: [Errno 65] No route to host'))
+08/01/2022 13:09:24 | Error: Unsupported format
+08/01/2022 13:22:46 | Error: Unsupported format
+08/01/2022 13:24:09 | Error: Unsupported format
+08/01/2022 13:24:39 | Error: Unsupported format
+08/01/2022 13:25:52 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641601542054_0_5962716972 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106002860>: Failed to establish a new connection: [Errno 65] No route to host'))
+08/01/2022 13:32:43 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1641601955183_0_4446147441 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x105e42620>: Failed to establish a new connection: [Errno 65] No route to host'))
+08/01/2022 13:32:43 | 194/200 new urls
+08/01/2022 13:32:43 | 0/200 old urls
+08/01/2022 13:32:43 | 46/200 gifs
+08/01/2022 13:32:43 | Cookies Eaten Successfuly.
+08/01/2022 13:32:43 | -----------END-----------
