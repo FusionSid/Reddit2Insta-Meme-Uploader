@@ -124,4 +124,5 @@ log(f"{ocount}/200 old urls")
 log(f"{gcount}/200 gifs")
 
 deletecookies()
+os.system("""osascript -e 'display notification "Finished" with title "Reddit 2 Insta"'""")
 log("-----------END-----------")
