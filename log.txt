@@ -463,3 +463,70 @@
 22/01/2022 17:34:37 | 71/200 gifs
 22/01/2022 17:34:37 | Cookies Eaten Successfuly.
 22/01/2022 17:34:37 | -----------END-----------
+23/01/2022 19:51:46 | ----------START----------
+23/01/2022 19:51:46 | Cookies Deletion Failed.
+23/01/2022 19:52:22 | Downloaded urls
+23/01/2022 19:52:25 | Logged In Successfully!
+23/01/2022 19:53:17 | Error: Unsupported format
+23/01/2022 19:58:24 | ----------START----------
+23/01/2022 19:58:24 | Cookies Deletion Failed.
+23/01/2022 19:58:30 | Downloaded urls
+23/01/2022 19:58:32 | Logged In Successfully!
+23/01/2022 19:59:09 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642921149209_0_8897386849 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+23/01/2022 19:59:12 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642921152184_0_9315435479 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+23/01/2022 19:59:42 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642921181774_0_5008559144 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+23/01/2022 20:02:28 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642921340352_0_7287609994 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1096a2cb0>: Failed to establish a new connection: [Errno 65] No route to host'))
+24/01/2022 14:35:27 | ----------START----------
+24/01/2022 14:35:27 | Cookies Deletion Failed.
+24/01/2022 14:35:32 | Downloaded urls
+24/01/2022 14:35:36 | Logged In Successfully!
+24/01/2022 14:35:44 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988143621_0_4183949894 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:35:49 | Error: Unsupported format
+24/01/2022 14:36:07 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988166640_0_4519872061 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:36:09 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988169039_0_1919145926 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:36:48 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988172922_0_1214840557 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:36:51 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988210628_0_4035599322 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:37:29 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988213916_0_7984187988 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:37:55 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988275203_0_6457625115 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:38:02 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988281957_0_5077152464 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:38:15 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988294861_0_3735754301 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:38:28 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988307346_0_4286321129 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:38:39 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988318301_0_5136174629 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:38:42 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988321764_0_4518511803 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:38:47 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988326702_0_9438518082 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:39:09 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988349176_0_1675958478 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:39:37 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988377015_0_5495908233 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:40:16 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988415513_0_3743687739 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:41:11 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988471189_0_4521010610 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:41:14 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988473838_0_7524053422 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:41:18 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988477428_0_5929650461 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:41:21 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988480449_0_5328204533 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:41:25 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988485076_0_3506704878 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:41:31 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988490650_0_8736742888 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:41:50 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988509854_0_3953299309 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:41:57 | Error: Unsupported format
+24/01/2022 14:42:28 | Error: Unsupported format
+24/01/2022 14:42:30 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988550216_0_1686068179 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:42:39 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988558713_0_3399463100 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:42:42 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988562255_0_6544077977 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:42:55 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988574316_0_8976741184 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:42:57 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988576871_0_1261763380 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:43:02 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988581345_0_3343392295 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:43:09 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988588790_0_7184445705 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:43:24 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988603610_0_1831148257 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:43:42 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988621463_0_3120041668 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:43:52 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988631598_0_4236108302 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:44:15 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988654675_0_9854537961 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:44:19 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988659013_0_8239458534 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:44:22 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988661407_0_6618509951 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:44:31 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988670947_0_6665166565 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:44:38 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988678155_0_7121214801 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:44:50 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988689721_0_4770010664 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:45:10 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988709228_0_7963814026 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:45:12 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988711453_0_5238676503 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:45:14 | Error: HTTPSConnectionPool(host='i.instagram.com', port=443): Max retries exceeded with url: /rupload_igphoto/1642988713366_0_5477922553 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')))
+24/01/2022 14:45:14 | 183/200 new urls
+24/01/2022 14:45:14 | 10/200 old urls
+24/01/2022 14:45:14 | 54/200 gifs
+24/01/2022 14:45:14 | Cookies Deletion Failed.
+24/01/2022 14:45:14 | -----------END-----------
