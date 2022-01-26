@@ -1,0 +1,224 @@
+2022-01-26 14:06:23,048 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2022-01-26 14:06:23,048 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/instabot/bot/bot.py
+2022-01-26 14:06:23,048 - instabot version: 0.117.0 (api_login) - INFO - Not yet logged in starting: PRE-LOGIN FLOW!
+2022-01-26 14:06:23,655 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/get_prefill_candidates/ returned response: <Response [200]>
+2022-01-26 14:06:23,894 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/sync/ returned response: <Response [200]>
+2022-01-26 14:06:24,471 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: launcher/sync/ returned response: <Response [200]>
+2022-01-26 14:06:24,740 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/contact_point_prefill/ returned response: <Response [200]>
+2022-01-26 14:06:26,836 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: accounts/login/ returned response: <Response [400]>
+2022-01-26 14:06:26,837 - instabot version: 0.117.0 (api) - DEBUG - Responsecode indicates error; response content: b'{"message":"challenge_required","challenge":{"url":"https://i.instagram.com/challenge/AXHCWPtw6kkMJiVA3lakPVe1ka_20umm6obcJtYitR83Am0bhIL8340KJRG3BTOexoeYZGc/4vs6tydzlV/","api_path":"/challenge/AXHCWPtw6kkMJiVA3lakPVe1ka_20umm6obcJtYitR83Am0bhIL8340KJRG3BTOexoeYZGc/4vs6tydzlV/","hide_webview_header":true,"lock":true,"logout":false,"native_flow":true,"flow_render_type":0},"status":"fail","error_type":"checkpoint_challenge_required"}'
+2022-01-26 14:06:26,837 - instabot version: 0.117.0 (api) - ERROR - Request returns 400 error!
+2022-01-26 14:06:26,837 - instabot version: 0.117.0 (api) - INFO - Instagram's error message: challenge_required
+2022-01-26 14:06:26,837 - instabot version: 0.117.0 (api) - INFO - Error type: checkpoint_challenge_required
+2022-01-26 14:06:30,660 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:06:30,661 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'lsyazioy4wd81.jpg' is not uploaded.
+2022-01-26 14:06:44,620 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:06:44,622 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'kgwcsied3xd81.jpg' is not uploaded.
+2022-01-26 14:06:48,567 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:06:48,567 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'xk4l57pb0wd81.jpg' is not uploaded.
+2022-01-26 14:07:04,555 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:07:04,555 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '6doktuq7mud81.jpg' is not uploaded.
+2022-01-26 14:07:10,317 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:07:10,318 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'a1cqrcbjkvd81.jpg' is not uploaded.
+2022-01-26 14:07:15,169 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:07:15,169 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '1dmkfa2eyvd81.png' is not uploaded.
+2022-01-26 14:07:21,347 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:07:21,347 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '8mop98dfsud81.jpg' is not uploaded.
+2022-01-26 14:07:26,968 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:07:26,970 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'uot2vh96hud81.jpg' is not uploaded.
+2022-01-26 14:07:30,523 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:07:30,524 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'tgzt9dv9jud81.png' is not uploaded.
+2022-01-26 14:07:35,619 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:07:35,620 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '682m7bpccvd81.jpg' is not uploaded.
+2022-01-26 14:07:41,187 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:07:41,187 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'qf8wpnnabud81.jpg' is not uploaded.
+2022-01-26 14:07:46,306 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:07:46,307 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'x1exfp6rhwd81.jpg' is not uploaded.
+2022-01-26 14:07:52,263 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:07:52,264 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'J2iAczI.png' is not uploaded.
+2022-01-26 14:07:56,609 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:07:56,610 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'ijlr5pawxvd81.jpg' is not uploaded.
+2022-01-26 14:07:59,973 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:07:59,973 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '6ayo5w64bvd81.jpg' is not uploaded.
+2022-01-26 14:08:04,544 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:04,545 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'wzd4wj6jnvd81.jpg' is not uploaded.
+2022-01-26 14:08:09,126 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:09,126 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'jzu7dwd0hvd81.jpg' is not uploaded.
+2022-01-26 14:08:13,264 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:08:13,264 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'nm42bf98jvd81.jpg' is not uploaded.
+2022-01-26 14:08:18,357 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:18,357 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'n0hrngyifud81.jpg' is not uploaded.
+2022-01-26 14:08:23,860 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:23,862 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '0wfdidkz2wd81.jpg' is not uploaded.
+2022-01-26 14:08:27,643 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:27,644 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '5bna8snqwtd81.jpg' is not uploaded.
+2022-01-26 14:08:33,364 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:33,364 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'iyas6i5u7td81.jpg' is not uploaded.
+2022-01-26 14:08:38,070 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:38,070 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '9lmp8gd6nwd81.jpg' is not uploaded.
+2022-01-26 14:08:44,248 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:44,249 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'pco02cb21vd81.jpg' is not uploaded.
+2022-01-26 14:08:49,479 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:08:49,481 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '3v903hfudwd81.jpg' is not uploaded.
+2022-01-26 14:08:53,466 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:53,466 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'qk1rwpq9tsd81.jpg' is not uploaded.
+2022-01-26 14:08:59,431 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:08:59,431 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'oazxpft4ktd81.jpg' is not uploaded.
+2022-01-26 14:09:04,676 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:09:04,676 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'ldc0l6h62wd81.jpg' is not uploaded.
+2022-01-26 14:09:08,120 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:09:08,120 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'wifwcwe9lvd81.jpg' is not uploaded.
+2022-01-26 14:09:14,115 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:09:14,115 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'z0n4z6o7pud81.jpg' is not uploaded.
+2022-01-26 14:09:18,954 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:09:18,954 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'jo6y92e6xwd81.jpg' is not uploaded.
+2022-01-26 14:09:23,465 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:09:23,466 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'dl9bkdnkztd81.jpg' is not uploaded.
+2022-01-26 14:09:31,485 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:09:31,486 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'dmdbzdx1svd81.jpg' is not uploaded.
+2022-01-26 14:09:34,884 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:09:34,884 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'c07v6eqabtd81.jpg' is not uploaded.
+2022-01-26 14:09:38,089 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:09:38,090 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'pxtewj0nwvd81.jpg' is not uploaded.
+2022-01-26 14:09:42,991 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:09:42,992 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'aqy0l4ofltd81.jpg' is not uploaded.
+2022-01-26 14:09:47,348 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:09:47,349 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'th96xev9etd81.jpg' is not uploaded.
+2022-01-26 14:10:02,029 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:02,031 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'svwxo0f8pwd81.jpg' is not uploaded.
+2022-01-26 14:10:05,518 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:05,518 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '4vwqwyh9psd81.jpg' is not uploaded.
+2022-01-26 14:10:09,008 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:09,008 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'x3vzsau8iud81.jpg' is not uploaded.
+2022-01-26 14:10:15,663 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:15,664 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '7r8k7htwtvd81.jpg' is not uploaded.
+2022-01-26 14:10:21,668 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:21,668 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '95umtwpgysd81.jpg' is not uploaded.
+2022-01-26 14:10:25,591 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:25,593 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '0ds5cuzyqud81.jpg' is not uploaded.
+2022-01-26 14:10:28,938 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:28,939 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'cpq3n534tud81.jpg' is not uploaded.
+2022-01-26 14:10:32,720 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:32,722 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '5y3gx637qwd81.jpg' is not uploaded.
+2022-01-26 14:10:38,251 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:38,251 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'wlqsjqposwd81.jpg' is not uploaded.
+2022-01-26 14:10:41,624 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:41,625 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'inxz4ou9twd81.jpg' is not uploaded.
+2022-01-26 14:10:45,906 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:45,906 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '2wug265e1sd81.jpg' is not uploaded.
+2022-01-26 14:10:51,400 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:51,400 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'j5sizetqpud81.jpg' is not uploaded.
+2022-01-26 14:10:55,992 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:10:55,992 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '8rnbhdifhsd81.jpg' is not uploaded.
+2022-01-26 14:10:59,829 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:10:59,830 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'ncbmwc2sssd81.png' is not uploaded.
+2022-01-26 14:11:13,166 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:13,167 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'yqncfyt1qtd81.png' is not uploaded.
+2022-01-26 14:11:16,779 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:16,780 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'fvj30e95tsd81.jpg' is not uploaded.
+2022-01-26 14:11:21,312 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:11:21,313 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '80x9q77d0wd81.png' is not uploaded.
+2022-01-26 14:11:26,890 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:26,890 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'b2q597h7zrd81.jpg' is not uploaded.
+2022-01-26 14:11:30,011 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:30,012 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '5xgyegwrptd81.jpg' is not uploaded.
+2022-01-26 14:11:33,325 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:33,326 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '7q7lqxnnmud81.jpg' is not uploaded.
+2022-01-26 14:11:37,681 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:37,682 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'z9jza3m89wd81.jpg' is not uploaded.
+2022-01-26 14:11:42,860 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:42,860 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'kn75yb3ustd81.jpg' is not uploaded.
+2022-01-26 14:11:47,291 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:47,293 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'xdknjv3i3ud81.png' is not uploaded.
+2022-01-26 14:11:50,690 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:50,691 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'qkymvikmkwd81.jpg' is not uploaded.
+2022-01-26 14:11:53,958 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:53,959 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'kdzom7bs6ud81.jpg' is not uploaded.
+2022-01-26 14:11:58,651 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:11:58,652 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '41dik2hi0ud81.jpg' is not uploaded.
+2022-01-26 14:12:02,442 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:12:02,443 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'x6ehtty9wvd81.jpg' is not uploaded.
+2022-01-26 14:12:06,691 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:12:06,691 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '7206sg8rusd81.jpg' is not uploaded.
+2022-01-26 14:12:09,994 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:12:09,996 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'sec40auwftd81.png' is not uploaded.
+2022-01-26 14:12:25,737 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:12:25,739 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'hm02898riud81.jpg' is not uploaded.
+2022-01-26 14:12:29,343 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:12:29,343 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'yjnfxhbsosd81.png' is not uploaded.
+2022-01-26 14:12:42,613 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:12:42,615 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '191ld67qetd81.jpg' is not uploaded.
+2022-01-26 14:12:47,018 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:12:47,018 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '25wimh5hevd81.jpg' is not uploaded.
+2022-01-26 14:12:51,287 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:12:51,287 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '8ikdu5lq0ud81.jpg' is not uploaded.
+2022-01-26 14:12:59,551 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:12:59,551 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'qibs9frytwd81.jpg' is not uploaded.
+2022-01-26 14:13:03,223 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:03,223 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '5jhi8x7h3td81.png' is not uploaded.
+2022-01-26 14:13:08,457 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:08,458 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'zgmfr3qyasd81.jpg' is not uploaded.
+2022-01-26 14:13:13,982 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:13,983 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'svlqzj41gwd81.jpg' is not uploaded.
+2022-01-26 14:13:17,730 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:17,730 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'mdnzi620dsd81.jpg' is not uploaded.
+2022-01-26 14:13:21,794 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:21,795 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'vcjb4pgb3xd81.jpg' is not uploaded.
+2022-01-26 14:13:27,525 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:27,526 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'ugof14yd2wd81.jpg' is not uploaded.
+2022-01-26 14:13:33,206 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:33,207 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'zz9r7krwrrd81.jpg' is not uploaded.
+2022-01-26 14:13:37,677 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:37,677 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '91prgjocqud81.png' is not uploaded.
+2022-01-26 14:13:44,059 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:44,060 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'bai2ssqohrd81.jpg' is not uploaded.
+2022-01-26 14:13:48,064 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:48,064 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '9rkc3wxvztd81.jpg' is not uploaded.
+2022-01-26 14:13:53,395 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:53,396 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'uqusg829wud81.jpg' is not uploaded.
+2022-01-26 14:13:58,899 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:13:58,899 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '5c2ngjf29wd81.jpg' is not uploaded.
+2022-01-26 14:14:04,493 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:14:04,493 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'gfdvlcelrtd81.png' is not uploaded.
+2022-01-26 14:14:09,181 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:14:09,181 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'q62gp6b60xd81.jpg' is not uploaded.
+2022-01-26 14:14:14,183 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:14:14,184 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'khcj6x5ulud81.jpg' is not uploaded.
+2022-01-26 14:14:19,677 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:14:19,677 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'qji2o3eaird81.jpg' is not uploaded.
+2022-01-26 14:14:24,791 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:14:24,791 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'cfepeqqwgwd81.png' is not uploaded.
+2022-01-26 14:14:30,348 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:14:30,349 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'majgy0iwivd81.jpg' is not uploaded.
+2022-01-26 14:14:35,043 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:14:35,045 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'fbtmed4jmwd81.jpg' is not uploaded.
+2022-01-26 14:14:40,295 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:14:40,295 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '7810v7kzrtd81.jpg' is not uploaded.
+2022-01-26 14:14:44,474 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:14:44,474 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'vukl5dfcjwd81.jpg' is not uploaded.
+2022-01-26 14:14:49,898 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:14:49,898 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'llv08yv6axd81.png' is not uploaded.
+2022-01-26 14:14:55,537 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:14:55,538 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'sgzcsu40psd81.jpg' is not uploaded.
+2022-01-26 14:15:02,662 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:15:02,663 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'yshpjs4g8xd81.png' is not uploaded.
+2022-01-26 14:15:07,045 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:15:07,045 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'va68x75quud81.png' is not uploaded.
+2022-01-26 14:15:12,509 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:15:12,509 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'i603cgedmwd81.jpg' is not uploaded.
+2022-01-26 14:15:18,108 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:15:18,108 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'z3f1ojlsiwd81.jpg' is not uploaded.
+2022-01-26 14:15:21,915 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:15:21,917 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '6v6xoo5l0ud81.jpg' is not uploaded.
+2022-01-26 14:15:25,658 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:15:25,658 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'g449nvsw6ud81.jpg' is not uploaded.
+2022-01-26 14:15:31,829 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:15:31,829 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '2c0a2g2k9xd81.jpg' is not uploaded.
+2022-01-26 14:15:35,488 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2022-01-26 14:15:35,488 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 's0cwt1vbrtd81.jpg' is not uploaded.
+2022-01-26 14:15:41,204 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:15:41,206 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '90vr9pjpuud81.jpg' is not uploaded.
+2022-01-26 14:15:58,539 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:15:58,540 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'imwb12ssdsd81.jpg' is not uploaded.
+2022-01-26 14:16:03,583 - instabot version: 0.117.0 (api_photo) - ERROR - Photo Upload failed with the following response: <Response [403]>
+2022-01-26 14:16:03,585 - instabot version: 0.117.0 (bot_photo) - INFO - Photo '79v7jvw0gwd81.jpg' is not uploaded.
