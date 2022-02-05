@@ -1,4 +1,6 @@
 .env
-.png
-.jpg
-.gif
+*.png
+*.jpg
+*.gif
+*.txt
+*.json
