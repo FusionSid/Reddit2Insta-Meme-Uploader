@@ -2,3 +2,4 @@ instabot==0.117.0
 praw==7.5.0
 python-dotenv==0.19.2
 wget==3.2
+sidspackage==0.0.4

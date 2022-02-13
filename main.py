@@ -8,11 +8,13 @@ import time
 from instabot import bot
 import praw
 from dotenv import load_dotenv
+from sidspackage import ColorPrint
 import wget
 from datetime import datetime
 import shutil
 
 load_dotenv()
+cp = ColorPrint()
 
 # Logging cause i like too.
 
@@ -30,10 +32,10 @@ def log(log):
 def deletecookies():
     try:
         shutil.rmtree("config")
-        print("Cookies Eaten Successfuly.")
+        cp.print("Cookies Eaten Successfuly.", color="yellow")
         log("Cookies Eaten Successfuly.")
     except Exception as e:
-        print("Cookies Deletion Failed.")
+        cp.print("Cookies Deletion Failed.", color="red")
         log(f"Cookies Deletion Failed. {e}")
 
 
@@ -74,6 +76,7 @@ def get_img_url(client: praw.Reddit, subreddits: list, limit: int):
 
 
 log("----------START----------")
+cp.print("----------START----------", color="blue")
 start_time = datetime.now()
 # Notification for mac, If youre not on mac delete this line
 os.system("""osascript -e 'display notification "Starting Meme Uploads" with title "Reddit 2 Insta"'""")
@@ -88,6 +91,7 @@ rpsnlist = ['memes', 'dankmemes']
 memes = get_img_url(client=client, subreddits=rpsnlist, limit=100)
 
 log("Downloaded urls")
+cp.print("Downloaded urls", color="purple")
 
 # Make insta bot
 bot = bot.Bot()
@@ -96,6 +100,7 @@ bot = bot.Bot()
 bot.login(username=os.environ['insta_user'], password=os.environ['insta_pass'])
 
 log("Logged In Successfully!")
+cp.print("Logged In Successfully!", color="green")
 
 hashtags = "#memes #funny #reddit #dankmemes #lol #memesdaily #humor #dank #meme #followorgetrickrolled #image #random #images"
 
@@ -138,6 +143,10 @@ log(f"{new_count}/{len(rpsnlist)*100} new urls")
 log(f"{old_count}/{len(rpsnlist)*100} old urls")
 log(f"{gif_count}/{len(rpsnlist)*100} gifs")
 
+cp.print(f"{new_count}/{len(rpsnlist)*100} new urls", color="cyan")
+cp.print(f"{old_count}/{len(rpsnlist)*100} old urls", color="cyan")
+cp.print(f"{gif_count}/{len(rpsnlist)*100} gifs", color="cyan")
+
 deletecookies()
 
 end_time = datetime.now()
@@ -148,4 +157,6 @@ total_time = int((end_time - start_time).total_seconds())
 os.system(
     f"""osascript -e 'display notification "Finished in {total_time}s" with title "Reddit 2 Insta"'""")
 log(f"Finished in {total_time}s")
+cp.print(f"Finished in {total_time}s", color="green")
+cp.print("-----------END-----------", color="red")
 log("-----------END-----------")
