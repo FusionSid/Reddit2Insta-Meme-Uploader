@@ -6,3 +6,4 @@
 *.json
 *.log
 /config
+*.DS_Store
