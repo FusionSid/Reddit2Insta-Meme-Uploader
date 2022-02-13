@@ -3,6 +3,7 @@
 # fucking imports
 import os
 import json
+from datetime import datetime
 import time
 from instabot import bot
 import praw
@@ -73,6 +74,7 @@ def get_img_url(client: praw.Reddit, subreddits: list, limit: int):
 
 
 log("----------START----------")
+start_time = datetime.now()
 # Notification for mac, If youre not on mac delete this line
 os.system("""osascript -e 'display notification "Starting Meme Uploads" with title "Reddit 2 Insta"'""")
 deletecookies()
@@ -138,8 +140,12 @@ log(f"{gif_count}/{len(rpsnlist)*100} gifs")
 
 deletecookies()
 
+end_time = datetime.now()
+
+total_time = int((end_time - start_time).total_seconds())
+
 # Notification for mac, If youre not on mac delete this line
 os.system(
-    """osascript -e 'display notification "Finished" with title "Reddit 2 Insta"'""")
-
+    f"""osascript -e 'display notification "Finished in {total_time}s" with title "Reddit 2 Insta"'""")
+log(f"Finished in {total_time}s")
 log("-----------END-----------")

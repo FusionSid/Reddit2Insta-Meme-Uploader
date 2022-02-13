@@ -4,3 +4,5 @@
 *.gif
 *.txt
 *.json
+*.log
+/config
