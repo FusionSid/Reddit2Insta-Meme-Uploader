@@ -7,14 +7,14 @@ import time
 from instabot import bot
 import praw
 from dotenv import load_dotenv
-from sidspackage import ColorPrint
+# from sidspackage import ColorPrint
 import wget
 from datetime import datetime
 import shutil
 
 load_dotenv()
 
-cp = ColorPrint() # Prints text with colors - Theres better libraries
+# cp = ColorPrint() # Prints text with colors - Theres better libraries
 
 
 def log(message:str) -> None:
@@ -45,10 +45,10 @@ def deletecookies():
     """
     try:
         shutil.rmtree("config") # Delete Config Folder
-        cp.print("Cookies Eaten Successfuly.", color="yellow")
+        # cp.print("Cookies Eaten Successfuly.", color="yellow")
         log("Cookies Eaten Successfuly.")
     except Exception as e:
-        cp.print("Cookies Deletion Failed.", color="red")
+        # cp.print("Cookies Deletion Failed.", color="red")
         log(f"Cookies Deletion Failed. {e}")
 
 
@@ -113,7 +113,7 @@ def get_img_url(client: praw.Reddit, subreddits: list, limit: int):
 
 
 log("----------START----------")
-cp.print("----------START----------", color="blue")
+# cp.print("----------START----------", color="blue")
 
 start_time = datetime.now() # Records when this bot starts
 
@@ -129,7 +129,7 @@ rpsnlist = ['memes', 'dankmemes']
 memes = get_img_url(client=client, subreddits=rpsnlist, limit=100)
 
 log("Downloaded urls")
-cp.print("Downloaded urls", color="purple")
+# cp.print("Downloaded urls", color="purple")
 
 # Make insta bot
 bot = bot.Bot()
@@ -141,7 +141,7 @@ bot.login( # Both values are put in the .env file
 )
 
 log("Logged In Successfully!")
-cp.print("Logged In Successfully!", color="green")
+# cp.print("Logged In Successfully!", color="green")
 
 hashtags = "#memes #funny #reddit #dankmemes #lol #memesdaily #humor #dank #meme #followorgetrickrolled #image #random #images"
 
@@ -186,9 +186,9 @@ log(f"{new_count}/{len(rpsnlist)*100} new urls")
 log(f"{old_count}/{len(rpsnlist)*100} old urls")
 log(f"{gif_count}/{len(rpsnlist)*100} gifs")
 
-cp.print(f"{new_count}/{len(rpsnlist)*100} new urls", color="cyan")
-cp.print(f"{old_count}/{len(rpsnlist)*100} old urls", color="cyan")
-cp.print(f"{gif_count}/{len(rpsnlist)*100} gifs", color="cyan")
+# cp.print(f"{new_count}/{len(rpsnlist)*100} new urls", color="cyan")
+# cp.print(f"{old_count}/{len(rpsnlist)*100} old urls", color="cyan")
+# cp.print(f"{gif_count}/{len(rpsnlist)*100} gifs", color="cyan")
 
 deletecookies()
 
@@ -198,8 +198,8 @@ total_time = int((end_time - start_time).total_seconds()) # The total time the b
 # Notification for mac, If youre not on mac delete this line
 os.system(f"""osascript -e 'display notification "Finished in {total_time/60}" with title "Reddit 2 Insta"'""")
 
-cp.print(f"Finished in {total_time}s", color="green")
-cp.print("-----------END-----------", color="red")
+# cp.print(f"Finished in {total_time}s", color="green")
+# cp.print("-----------END-----------", color="red")
 
 log(f"Finished in {total_time}s")
 log("-----------END-----------")
