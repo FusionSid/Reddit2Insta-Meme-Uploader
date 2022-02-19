@@ -169,7 +169,7 @@ for meme in memes:
         new_count += 1
 
     filename = wget.download(url=str(post_url), out="upload") # Download Meme
-    cp.print("Downloaded", color="green")
+    cp.print("\nDownloaded", color="green")
     time.sleep(2)
     try:
         bot.upload_photo(filename, caption=f"{post_title}\n\n[Via Reddit - Author: u/{post_author}]\n\n[Hashtags]\n{hashtags}")
