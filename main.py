@@ -7,14 +7,14 @@ import time
 from instabot import bot
 import praw
 from dotenv import load_dotenv
-# from sidspackage import ColorPrint
+from colorprint import ColorPrint
 import wget
 from datetime import datetime
 import shutil
 
 load_dotenv()
 
-# cp = ColorPrint() # Prints text with colors - Theres better libraries
+cp = ColorPrint() # Prints text with colors - Theres better libraries
 
 
 def log(message:str) -> None:
@@ -45,10 +45,10 @@ def deletecookies():
     """
     try:
         shutil.rmtree("config") # Delete Config Folder
-        # cp.print("Cookies Eaten Successfuly.", color="yellow")
+        cp.print("Cookies Eaten Successfuly.", color="yellow")
         log("Cookies Eaten Successfuly.")
     except Exception as e:
-        # cp.print("Cookies Deletion Failed.", color="red")
+        cp.print("Cookies Deletion Failed.", color="red")
         log(f"Cookies Deletion Failed. {e}")
 
 
@@ -113,7 +113,7 @@ def get_img_url(client: praw.Reddit, subreddits: list, limit: int):
 
 
 log("----------START----------")
-# cp.print("----------START----------", color="blue")
+cp.print("----------START----------", color="blue")
 
 start_time = datetime.now() # Records when this bot starts
 
@@ -125,11 +125,11 @@ deletecookies()
 client = reddit_client()
 
 # get 100 image urls from each of these subreddits
-rpsnlist = ['memes', 'dankmemes']
+rpsnlist = ['memes', 'dankmemes'] # If you want to scrape more subreddits, add them to this list
 memes = get_img_url(client=client, subreddits=rpsnlist, limit=100)
 
 log("Downloaded urls")
-# cp.print("Downloaded urls", color="purple")
+cp.print("Downloaded urls", color="purple")
 
 # Make insta bot
 bot = bot.Bot()
@@ -141,16 +141,16 @@ bot.login( # Both values are put in the .env file
 )
 
 log("Logged In Successfully!")
-# cp.print("Logged In Successfully!", color="green")
+cp.print("Logged In Successfully!", color="green")
 
 hashtags = "#memes #funny #reddit #dankmemes #lol #memesdaily #humor #dank #meme #followorgetrickrolled #image #random #images"
 
 old_count, new_count, gif_count = 0, 0, 0 # These variables count the old, new and gifs in the list returned by get_img_url()
 
-for meme in memes:
-    with open('urls.json', 'r') as f:
-        data = json.load(f)
+with open('urls.json', 'r') as f:
+    data = json.load(f)
 
+for meme in memes:
     post_url = meme["url"]
     post_author = meme["author"]
     post_title = meme["title"]
@@ -160,24 +160,26 @@ for meme in memes:
         gif_count += 1
         continue
 
-    if post_url in data:
+    elif post_url in data:
         old_count += 1
         continue
 
     else:
         data.append(post_url)
         new_count += 1
-        with open("urls.json", 'w') as f:
-            json.dump(data, f, indent=4)
 
     filename = wget.download(url=str(post_url), out="upload") # Download Meme
+    cp.print("Downloaded", color="green")
     time.sleep(2)
     try:
-        bot.upload_photo(filename, caption=f"{post_title}\n\n[Via Reddit] - (Author: u/{post_author})\n\n[Hashtags]\n{hashtags}")
+        bot.upload_photo(filename, caption=f"{post_title}\n\n[Via Reddit - Author: u/{post_author}]\n\n[Hashtags]\n{hashtags}")
         time.sleep(2)
     except Exception as e:
         log(f"Error: {e}")
     os.remove(filename)
+
+with open("urls.json", 'w') as f:
+    json.dump(data, f, indent=4)
 
 
 # Stats:
@@ -186,9 +188,9 @@ log(f"{new_count}/{len(rpsnlist)*100} new urls")
 log(f"{old_count}/{len(rpsnlist)*100} old urls")
 log(f"{gif_count}/{len(rpsnlist)*100} gifs")
 
-# cp.print(f"{new_count}/{len(rpsnlist)*100} new urls", color="cyan")
-# cp.print(f"{old_count}/{len(rpsnlist)*100} old urls", color="cyan")
-# cp.print(f"{gif_count}/{len(rpsnlist)*100} gifs", color="cyan")
+cp.print(f"{new_count}/{len(rpsnlist)*100} new urls", color="cyan")
+cp.print(f"{old_count}/{len(rpsnlist)*100} old urls", color="cyan")
+cp.print(f"{gif_count}/{len(rpsnlist)*100} gifs", color="cyan")
 
 deletecookies()
 
@@ -198,8 +200,8 @@ total_time = int((end_time - start_time).total_seconds()) # The total time the b
 # Notification for mac, If youre not on mac delete this line
 os.system(f"""osascript -e 'display notification "Finished in {total_time/60}" with title "Reddit 2 Insta"'""")
 
-# cp.print(f"Finished in {total_time}s", color="green")
-# cp.print("-----------END-----------", color="red")
+cp.print(f"Finished in {total_time}s", color="green")
+cp.print("-----------END-----------", color="red")
 
 log(f"Finished in {total_time}s")
 log("-----------END-----------")
