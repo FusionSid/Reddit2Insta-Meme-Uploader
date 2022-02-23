@@ -22,6 +22,7 @@ with open("config.json") as f:
 SUBREDDIT = settings["show_subreddit"]
 HASHTAGS = settings["show_hashtags"]
 DELAY = settings["wait_delay"]
+DELAY = int(DELAY)
 
 
 def log(message:str) -> None:
