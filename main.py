@@ -16,6 +16,13 @@ load_dotenv()
 
 cp = ColorPrint() # Prints text with colors - Theres better libraries
 
+with open("config.json") as f:
+    settings = json.load(f)
+
+SUBREDDIT = settings["show_subreddit"]
+HASHTAGS = settings["show_hashtags"]
+DELAY = settings["wait_delay"]
+
 
 def log(message:str) -> None:
     """
@@ -108,7 +115,8 @@ def get_img_url(client: praw.Reddit, subreddits: list, limit: int):
                 data = {
                     "url": post.url,
                     "author": post.author.name,
-                    "title": post.title
+                    "title": post.title,
+                    "subreddit" : post.subreddit.name
                 }
                 memes.append(data)
 
@@ -122,7 +130,6 @@ start_time = datetime.now() # Records when this bot starts
 
 # Notification for mac, If youre not on mac delete this line
 os.system("""osascript -e 'display notification "Starting Meme Uploads" with title "Reddit 2 Insta"'""")
-deletecookies()
 
 # Create reddit client
 client = reddit_client()
@@ -157,6 +164,7 @@ for meme in memes:
     post_url = meme["url"]
     post_author = meme["author"]
     post_title = meme["title"]
+    post_subreddit = meme["subreddit"]
 
     fileext = post_url[-4] + post_url[-3] + post_url[-2] + post_url[-1] # gets the file extension of the image, eg: .png
     if fileext == '.gif':
@@ -175,8 +183,15 @@ for meme in memes:
     cp.print("\nDownloaded Successfully", color="green")
     time.sleep(2)
     try:
-        bot.upload_photo(filename, caption=f"{post_title}\n\n[Via Reddit - Author: u/{post_author}]\n\n[Hashtags]\n{hashtags}")
-        time.sleep(2)
+        CAPTION = f"{post_title}\n\n[Via Reddit - Author: u/{post_author}]"
+        if SUBREDDIT == True:
+            CAPTION += f"{post_subreddit}"
+            
+        if HASHTAGS == True:
+            CAPTION += "\n\n[Hashtags]\n{hashtags}"
+
+        bot.upload_photo(filename, caption=CAPTION)
+        time.sleep(DELAY)
     except Exception as e:
         log(f"Error: {e}")
     os.remove(filename)
