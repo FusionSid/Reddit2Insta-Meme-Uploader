@@ -101,6 +101,9 @@ def get_img_url(client: praw.Reddit, subreddits: list, limit: int):
         hot_memes = client.subreddit(subreddit).hot(limit=limit) # Returns list of hot memes
 
         for post in hot_memes:
+            if post.over_18 == False:
+                continue
+            
             if is_image(post): # Checks if post is image
                 data = {
                     "url": post.url,
