@@ -11,7 +11,6 @@ from colorprint import ColorPrint
 import wget
 from datetime import datetime
 import shutil
-
 load_dotenv()
 
 cp = ColorPrint() # Prints text with colors - Theres better libraries
@@ -52,6 +51,8 @@ def deletecookies():
         `None`: This function doesn't return anything
     """
     try:
+        if os.path.exists("config/*cookie.json"):
+            os.remove("config/*cookie.json")
         shutil.rmtree("config") # Delete Config Folder
         cp.print("Cookies Eaten Successfuly.", color="yellow")
         log("Cookies Eaten Successfuly.")
@@ -67,7 +68,7 @@ def reddit_client():
     Returns:
         `praw.Reddit`: This returns a client object which will be used to download the memes
     """
-    client = praw.Reddit( # Client ID and Client Secret are bot in the .env file
+    client = praw.Reddit( # Client ID and Client Secret are both in the .env file
         client_id=os.environ['CLIENT_ID'], 
         client_secret=os.environ['CLIENT_SECRET'],
         user_agent="memes-fastapi"
@@ -92,7 +93,7 @@ def is_image(post):
         return False
 
 
-def get_img_url(client: praw.Reddit, subreddits: list, limit: int):
+def get_img_url(client: praw.Reddit, subreddits, limit: int):
     """
     This function looks through the top memes of reddit and returns info about them in a dictionary
 
@@ -106,19 +107,19 @@ def get_img_url(client: praw.Reddit, subreddits: list, limit: int):
     """
     memes = []
     for subreddit in subreddits:
+
         hot_memes = client.subreddit(subreddit).hot(limit=limit) # Returns list of hot memes
 
         for post in hot_memes:
-            if post.over_18 == False:
+            if str(post.over_18) == True:
                 continue
-            
+
             if is_image(post): # Checks if post is image
                 data = {
                     "url": post.url,
                     "author": post.author.name,
                     "title": post.title,
-                    "subreddit" : post.subreddit.name
-                }
+                    "subreddit" : subreddit}
                 memes.append(data)
 
     return memes 
@@ -131,6 +132,7 @@ start_time = datetime.now() # Records when this bot starts
 
 # Notification for mac, If youre not on mac delete this line
 os.system("""osascript -e 'display notification "Starting Meme Uploads" with title "Reddit 2 Insta"'""")
+deletecookies()
 
 # Create reddit client
 client = reddit_client()
@@ -186,16 +188,16 @@ for meme in memes:
     try:
         CAPTION = f"{post_title}\n\n[Via Reddit - Author: u/{post_author}]"
         if SUBREDDIT == True:
-            CAPTION += f"{post_subreddit}"
+            CAPTION += f"\nSubreddit:\n{post_subreddit}"
             
         if HASHTAGS == True:
-            CAPTION += "\n\n[Hashtags]\n{hashtags}"
-
-        bot.upload_photo(filename, caption=CAPTION)
+            CAPTION += f"\n\n[Hashtags]\n{hashtags}"
+        cwd = os.getcwd()
+        bot.upload_photo(os.path.join(cwd, filename), caption=CAPTION)
         time.sleep(DELAY)
     except Exception as e:
         log(f"Error: {e}")
-    os.remove(filename)
+    os.remove(os.path.join(cwd, filename))
 
 with open("urls.json", 'w') as f:
     json.dump(data, f, indent=4)
