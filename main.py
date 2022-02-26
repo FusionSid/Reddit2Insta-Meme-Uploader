@@ -193,11 +193,11 @@ for meme in memes:
         if HASHTAGS == True:
             CAPTION += f"\n\n[Hashtags]\n{hashtags}"
         cwd = os.getcwd()
-        bot.upload_photo(os.path.join(cwd, filename), caption=CAPTION)
+        bot.upload_photo(filename, caption=CAPTION)
         time.sleep(DELAY)
     except Exception as e:
         log(f"Error: {e}")
-    os.remove(os.path.join(cwd, filename))
+    os.remove(filename)
 
 with open("urls.json", 'w') as f:
     json.dump(data, f, indent=4)
