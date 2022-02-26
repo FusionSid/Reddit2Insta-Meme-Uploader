@@ -7,11 +7,13 @@ os.system("clear")
 ays = input("Are you sure you want to create these files? y/n: ")
 
 if ays.lower() == "y":
-    with open('url.json', 'w') as f:
+    with open('urls.json', 'w') as f:
         json.dump(urls, f)
         
-    with open('logs.txt', 'w') as f:
+    with open('log.txt', 'w') as f:
         f.write("--Log File--")
+    
+    os.mkdir("upload")
 
     os.system("clear")
     cid = input("Please enter your client id:")

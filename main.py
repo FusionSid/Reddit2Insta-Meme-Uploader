@@ -160,9 +160,6 @@ hashtags = "#memes #funny #reddit #dankmemes #lol #memesdaily #humor #dank #meme
 
 old_count, new_count, gif_count = 0, 0, 0 # These variables count the old, new and gifs in the list returned by get_img_url()
 
-with open('urls.json', 'r') as f:
-    data = json.load(f)
-
 for meme in memes:
     post_url = meme["url"]
     post_author = meme["author"]
@@ -170,6 +167,8 @@ for meme in memes:
     post_subreddit = meme["subreddit"]
 
     fileext = post_url[-4] + post_url[-3] + post_url[-2] + post_url[-1] # gets the file extension of the image, eg: .png
+    with open('urls.json', 'r') as f:
+        data = json.load(f)
     if fileext == '.gif':
         gif_count += 1
         continue
@@ -180,27 +179,34 @@ for meme in memes:
 
     else:
         data.append(post_url)
+        with open("urls.json", 'w') as f:
+            json.dump(data, f, indent=4)
         new_count += 1
 
     filename = wget.download(url=str(post_url), out="upload") # Download Meme
     cp.print("\nDownloaded Successfully", color="green")
-    time.sleep(2)
+    time.sleep(5)
     try:
         CAPTION = f"{post_title}\n\n[Via Reddit - Author: u/{post_author}]"
         if SUBREDDIT == True:
-            CAPTION += f"\nSubreddit:\n{post_subreddit}"
+            CAPTION += f"\nSubreddit: {post_subreddit}"
             
         if HASHTAGS == True:
             CAPTION += f"\n\n[Hashtags]\n{hashtags}"
-        cwd = os.getcwd()
+
         bot.upload_photo(filename, caption=CAPTION)
-        time.sleep(DELAY)
+        try:
+            time.sleep(DELAY)
+        except:
+            time.sleep(10)
     except Exception as e:
         log(f"Error: {e}")
-    os.remove(filename)
+    try:
+        os.remove(filename)
+    except:
+        continue
 
-with open("urls.json", 'w') as f:
-    json.dump(data, f, indent=4)
+
 
 
 # Stats:
